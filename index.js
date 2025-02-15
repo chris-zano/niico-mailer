@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { createServer } from 'http';
 import path, { dirname } from 'path';
-import { Server } from 'socket.io';
 import mongoose from 'mongoose';
 import { routes } from './index.routes.js';
 
