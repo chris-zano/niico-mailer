@@ -1,5 +1,7 @@
 import { parentPort } from 'worker_threads';
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config()
 
 const sendMail = async ({ to, subject, html }) => {
     const transporter = nodemailer.createTransport({
